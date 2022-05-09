@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DataBindingSample</string>
+    <string name="demo_simple">Simple</string>
+    <string name="demo_list">List</string>
+
+    <string name="demo_list_add_item">Add item</string>
+    <string name="demo_list_remove_item">Remove item</string>
+
+    <string name="demo_inverse">Two-way binding</string>
+    <string name="welcome">Hello %s</string>
+
+    <string name="demo_expression">Expression</string>
+
+    <string name="demo_animation">Animation</string>
+    <string name="show_image">Show image</string>
+
+    <string name="demo_lambda">Lambda</string>
+
+    <string name="demo_inject">Injection</string>
+
+    <string name="fire">Fire %s</string>
+    <string name="employ">Employ %s</string>
+
+    <string name="change_component">Change Component</string>
+
+</resources>
