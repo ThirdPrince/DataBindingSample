@@ -25,6 +25,8 @@
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
+            android:text="@{@string/demo_list}"
+            android:onClick="@{presenter.onClickListDemo}"
             android:layout_height="50dp"></com.google.android.material.button.MaterialButton>
 
         <com.google.android.material.button.MaterialButton

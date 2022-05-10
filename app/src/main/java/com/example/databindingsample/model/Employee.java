@@ -27,6 +27,12 @@ public class Employee extends BaseObservable {
         this.lastName = lastName;
     }
 
+    public Employee(String lastName, String firstName, boolean fired) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        isFired.set(fired);
+    }
+
     public void setFirstName(String firstName) {
         this.firstName = firstName;
         notifyPropertyChanged(BR.firstName);

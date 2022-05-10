@@ -5,21 +5,27 @@
 
     <data>
 
+        <variable
+            name="presenter"
+            type="com.example.databindingsample.ui.ListActivity.Presenter" />
     </data>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".ui.ListActivity">
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:onClick="@{presenter.onClickAddItem}"
             android:text="@string/demo_list_add_item" />
 
         <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:onClick="@{presenter.onClickRemoveItem}"
             android:text="@string/demo_list_remove_item" />
 
         <androidx.recyclerview.widget.RecyclerView

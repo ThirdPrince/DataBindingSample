@@ -29,5 +29,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this,DemoActivity.class));
         }
 
+        public void onClickListDemo(View view){
+            startActivity(new Intent(MainActivity.this,ListActivity.class));
+        }
+
+
+
     }
 }
