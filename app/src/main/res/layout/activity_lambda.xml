@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.example.databindingsample.ui.LambdaActivity.Presenter" />
+        <variable
+            name="employee"
+            type="com.example.databindingsample.model.Employee" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.LambdaActivity">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{employee.firstName}"
+            android:onClick="@{()->presenter.onEmployeeClick(employee)}"
+            android:onLongClick="@{() -> presenter.onEmployeeLongClick(employee,context)}"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onFocusChange="@{(v, fcs) -> presenter.onFocusChange(employee,context)}"
+            android:text="@{employee.lastName}"
+            />
+
+    </LinearLayout>
+</layout>

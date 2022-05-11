@@ -20,6 +20,8 @@ public class Employee extends BaseObservable {
 
     private String lastName;
 
+    private String avatar;
+
     public ObservableBoolean isFired = new ObservableBoolean();
 
     public Employee(String firstName,String lastName){
@@ -42,6 +44,22 @@ public class Employee extends BaseObservable {
         this.lastName = lastName;
         notifyPropertyChanged(BR.lastName);
 
+    }
+
+    public void setFired(boolean fired) {
+        isFired.set(fired);
+    }
+
+    public ObservableBoolean getFired() {
+        return isFired;
+    }
+
+    public void setAvatar(String mAvatar) {
+        this.avatar = mAvatar;
+    }
+
+    public String getAvatar() {
+        return avatar;
     }
 
     @Bindable

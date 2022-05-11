@@ -97,7 +97,6 @@ public class EmployeeAdapter extends RecyclerView.Adapter<BindingViewHolder> {
 
     public void addAll(List<Employee> employees){
         employeeList.addAll(employees);
-
     }
 
     Random random = new Random(System.currentTimeMillis());
@@ -105,6 +104,7 @@ public class EmployeeAdapter extends RecyclerView.Adapter<BindingViewHolder> {
     public void add(Employee employee){
         int pos = random.nextInt(employeeList.size()+1);
         employeeList.add(pos,employee);
+        //employeeList.add(employee)
         notifyItemInserted(pos);
     }
 

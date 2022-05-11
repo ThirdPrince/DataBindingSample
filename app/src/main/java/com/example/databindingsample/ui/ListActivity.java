@@ -47,7 +47,6 @@ public class ListActivity extends AppCompatActivity {
         employeeAdapter = new EmployeeAdapter(this);
         binding.recyclerView.setAdapter(employeeAdapter);
         binding.setPresenter(new Presenter());
-
         List<Employee> employeeList = new ArrayList<>();
         employeeList.add(new Employee("Zhai","Mark",false));
         employeeList.add(new Employee("Zhai2","Mark2",false));
