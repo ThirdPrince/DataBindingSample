@@ -1,4 +1,4 @@
-﻿# JetPack databinding samples
+﻿# JetPack databinding samples androidx
 
 
 JetPacj databinding 基本用法 ，慕课网视频入门：https://www.imooc.com/learn/719 高阶：
